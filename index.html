@@ -14,6 +14,8 @@
     />
   </head>
   <body>
+
+    <!-- Header -->
     <div class="sony-logo"><img src="./asset/sony_logo.svg" alt="" /></div>
     <div class="navbar">
       <div class="logo">
@@ -48,8 +50,51 @@
         </div>
       </div>
     </div>
+    <!-- End Of Header -->
+
+    <!-- Main Starts Here -->
     <main>
-        <h1 style="color: white; text-align: center;">Baki Ka Baadme Karunga</h1>
+        <!-- First Section -->
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slides">
+                  <div class="slide"><div id="games"></div></div>
+                  <div class="slide"><div id="games"></div></div>
+                  <div class="slide"><div id="games"></div></div>
+                  <div class="slide"><div id="games"></div></div>
+                  <div class="slide"><div id="games"></div></div>
+                </div>
+              </div>
+              
+              <div class="button-container">
+                <div class="button" onclick="changeSlide(0)">
+                <div class="buttonimage">
+                    <img src="./asset/spider-man-2-hero-banner-desktop-07-en-16oct23.webp" alt="">
+                </div>
+                </div>
+                <div class="button" onclick="changeSlide(1)">
+                <div class="buttonimage">
+                    <img src="./asset/great-games-2024-homepage-hero-desktop-01-14dec23$en.webp" alt="">
+                </div>
+                </div>
+                <div class="button" onclick="changeSlide(2)">
+                <div class="buttonimage">
+                    <img src="./asset/Fortnite-hero-desktop-05-en-11dec23.webp" alt="">
+                </div>
+                </div>
+                <div class="button" onclick="changeSlide(3)">
+                <div class="buttonimage">
+                    <img src="./asset/NBA2K24-s4-hero-desktop-01-en-05jan24.jpeg" alt="">
+                </div>
+                </div>
+                <div class="button" onclick="changeSlide(4)">
+                <div class="buttonimage">
+                    <img src="./asset/The-last-of-us-part-ii-remastered-hero-banner-desktop-02-en-16mar23.jpeg" alt="">
+                </div>
+                </div>
+              </div>
+        </div>
+
     </main>
   </body>
   <script src="./script.js"></script>
