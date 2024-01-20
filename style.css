@@ -138,13 +138,13 @@ main .slider-container{
   }
 
   .button {
-    width: 250px;
+    width: 18%;
     height: 100%;
     border-radius: 12px;
     display: inline-block;
     opacity: 0.78;
     padding: 4px;
-    margin-inline: 10px;
+    margin-inline: 5px;
   }
 .buttonimage{
     width: 100%;
