@@ -101,7 +101,46 @@
     </main>
 
     <div class="wrapper">
-        <h1>Baadme Ho baadme</h1>
+        <div class="custom-slider-container">
+            <div class="custom-slider" id="custom-slider">
+              <div class="custom-slide ps5">
+                <div class="left">
+                    <p>Introducing the</p>
+                    <p>PS5 console and</p>
+                    <p>accessories</p>
+                    <br>
+                    <div class="ps5-dark">PlayStation 5 Console</div>
+                    <div class="sub">Experience an all-new generation of incredible PlayStation games.</div>
+                    <button id="find">Find out more</button>
+                </div>
+                <div class="right">
+                    <img src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-console-featured-hardware-image-block-01-en-11aug23?$1600px$" alt="">
+                </div>
+              </div>
+              <div class="custom-slide">Slide 2</div>
+              <div class="custom-slide">Slide 3</div>
+              <div class="custom-slide">Slide 4</div>
+              <div class="custom-slide">Slide 5</div>
+              <div class="custom-slide">Slide 6</div>
+              <div class="custom-slide">Slide 7</div>
+              <div class="custom-slide">Slide 8</div>
+              <div class="custom-slide">Slide 9</div>
+            </div>
+          </div>
+          
+          <div class="custom-button-container">
+            <div class="custom-nav-button" onclick="scrollCustomSlider('left')">←</div>
+            <div class="custom-button" onclick="changeCustomSlide(0)" id="custom-button-1">1</div>
+            <div class="custom-button" onclick="changeCustomSlide(1)" id="custom-button-2">2</div>
+            <div class="custom-button" onclick="changeCustomSlide(2)" id="custom-button-3">3</div>
+            <div class="custom-button" onclick="changeCustomSlide(3)" id="custom-button-4">4</div>
+            <div class="custom-button" onclick="changeCustomSlide(4)" id="custom-button-5">5</div>
+            <div class="custom-button" onclick="changeCustomSlide(5)" id="custom-button-6">6</div>
+            <div class="custom-button" onclick="changeCustomSlide(6)" id="custom-button-7">7</div>
+            <div class="custom-button" onclick="changeCustomSlide(7)" id="custom-button-8">8</div>
+            <div class="custom-button" onclick="changeCustomSlide(8)" id="custom-button-9">9</div>
+            <div class="custom-nav-button" onclick="scrollCustomSlider('right')">→</div>
+          </div>
     </div>
   </body>
   <script src="./script.js"></script>

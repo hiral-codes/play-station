@@ -48,3 +48,31 @@ const slides = document.querySelector('.slides');
   }
 
   startInterval(); // Start the initial interval
+
+
+//   Second Slider
+
+const customSlider = document.getElementById('custom-slider');
+const customButtons = document.querySelectorAll('.custom-button');
+let currentCustomSlide = 0;
+
+function changeCustomSlide(index) {
+  currentCustomSlide = index;
+  updateCustomSlider();
+}
+
+function updateCustomSlider() {
+  const translateValue = -currentCustomSlide * 100 + '%';
+  customSlider.style.transform = `translateX(${translateValue})`;
+
+  customButtons.forEach((button, index) => {
+    button.classList.toggle('active', index === currentCustomSlide);
+  });
+}
+
+function scrollCustomSlider(direction) {
+  const totalCustomSlides = 9; // Assuming 9 slides
+  const increment = direction === 'left' ? -1 : 1;
+  currentCustomSlide = (currentCustomSlide + increment + totalCustomSlides) % totalCustomSlides;
+  updateCustomSlider();
+}
