@@ -190,7 +190,9 @@ main .slider-container{
     padding-top: 64px;
 }
 
-section{
+.wrapper{
+    margin-top: 25px;
     width: 100%;
     height: 100vh;
+    text-align: center;
 }
