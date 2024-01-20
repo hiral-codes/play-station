@@ -80,11 +80,14 @@ html,body{
 }
 
 main{
-    background-color: #151515;
+    background-color: #525252;
     height: 200vh;
 }
 main img{
     transition: 0.4s all ease-in-out;
     width: 100%;
+}
+.margin{
+    padding-top: 64px;
 }
 
