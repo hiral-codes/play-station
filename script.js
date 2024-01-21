@@ -47,7 +47,7 @@ const slides = document.querySelector('.slides');
     }, 2500); // Change slide every 2000 milliseconds (2 seconds)
   }
 
-  startInterval(); // Start the initial interval
+  // startInterval(); // Start the initial interval
 
 
 //   Second Slider
