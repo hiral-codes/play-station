@@ -52,7 +52,8 @@ const slides = document.querySelector('.slides');
 
 //   Second Slider
 
-const customSlider = document.getElementById('custom-slider');
+function secondSlider(){
+  const customSlider = document.getElementById('custom-slider');
 const customButtons = document.querySelectorAll('.custom-button');
 let currentCustomSlide = 0;
 
@@ -76,3 +77,64 @@ function scrollCustomSlider(direction) {
   currentCustomSlide = (currentCustomSlide + increment + totalCustomSlides) % totalCustomSlides;
   updateCustomSlider();
 }
+}
+secondSlider();
+
+// Menu Bar
+
+function menuBar(){
+  document.addEventListener('DOMContentLoaded', function () {
+    let menuItems = document.querySelectorAll(".menu-item");
+    let navContainer = document.getElementById("nav-items-container");
+    let gamesMenu = document.getElementById("games-menu");
+    let ps5Menu = document.getElementById("ps5-menu");
+    let ps4Menu = document.getElementById("ps4-menu");
+    let servicesMenu = document.getElementById("services-menu");
+    let accessoriesMenu = document.getElementById("accessories-menu");
+    let newsMenu = document.getElementById("news-menu");
+  
+    let isOpen = false; // Track if the container is currently open
+    let lastClickedIndex = -1; // Track the last clicked index
+  
+    menuItems.forEach(function (menuItem, index) {
+      menuItem.addEventListener('click', function () {
+        // If clicking on the same menuItem, close the navContainer
+        if (lastClickedIndex === index && isOpen) {
+          navContainer.style.display = 'none';
+          isOpen = false;
+        } else {
+          // Toggle the visibility of the nav container
+          navContainer.style.display = 'block';
+          isOpen = true;
+  
+          // Hide all menus initially
+          gamesMenu.style.display = 'none';
+          ps5Menu.style.display = 'none';
+          ps4Menu.style.display = 'none';
+          servicesMenu.style.display = 'none';
+          accessoriesMenu.style.display = 'none';
+          newsMenu.style.display = 'none';
+  
+          // Show the corresponding menu
+          if (index === 0) {
+            gamesMenu.style.display = 'block';
+          } else if (index === 1) {
+            ps5Menu.style.display = 'block';
+          } else if(index === 2){
+            ps4Menu.style.display = 'block'
+          }else if(index === 3){
+            servicesMenu.style.display = 'block'
+          } else if(index === 4){
+            accessoriesMenu.style.display = 'block'
+          }else if(index === 5){
+            newsMenu.style.display = 'block'
+          }
+  
+          lastClickedIndex = index; // Update the last clicked index
+        }
+      });
+    });
+  });
+}
+menuBar();
+
