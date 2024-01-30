@@ -85,37 +85,37 @@ body {
   height: auto;
   display: none;
 }
-.icons-container{
-    width: 100%;
-    padding-bottom: 30px;
-    height: auto;
-    gap: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.5s ease;
+.icons-container {
+  width: 100%;
+  padding-bottom: 30px;
+  height: auto;
+  gap: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease;
 }
-.icons-container .icon{
-    padding: 10px;
-    width: 150px;
-    border-radius: 4px;
-    cursor: pointer;
-    overflow: hidden;
-    text-align: center;
-    animation: openup 0.7s forwards;
+.icons-container .icon {
+  padding: 10px;
+  width: 150px;
+  border-radius: 4px;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  animation: openup 0.7s forwards;
 }
-.icons-container .icon img{
-    width: 100px;
-    /* height: 100px; */
-    aspect-ratio: 1/1;
+.icons-container .icon img {
+  width: 100px;
+  /* height: 100px; */
+  aspect-ratio: 1/1;
 }
-.icons-container .icon p{
-    text-align: center;
-    font-weight: bolder;
+.icons-container .icon p {
+  text-align: center;
+  font-weight: bolder;
 }
-.icons-container .icon:hover{
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.461);
-    color: #0070d1;
+.icons-container .icon:hover {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.461);
+  color: #0070d1;
 }
 .logo .navItems ul {
   display: flex;
@@ -368,14 +368,12 @@ main .slider-container {
   color: #fff;
 }
 
-
-
 /* Animations */
 @keyframes openup {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
